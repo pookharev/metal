@@ -18,7 +18,10 @@ from django.urls import path
 
 from face_app.views import index
 
+from bases.views import index
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('face_app/', index),
+    path('bases/', index),
 ]
